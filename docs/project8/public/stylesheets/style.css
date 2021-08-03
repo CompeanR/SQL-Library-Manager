@@ -1,41 +1,46 @@
 body {
   padding: 10px 50px 50px;
   font: 18px "Garamond", serif;
+  background-color: #282828;
 }
 
 a {
-  color: #019875;
+  color: #b3b3b3;
   text-decoration: none;
   font-weight: bold;
   transition: 0.4s;
 }
 
-  a:hover {
-    color: black;
-  }
+a:hover {
+  color: #ffffff;
+}
 
-a.button, input[type=submit] {
-  color: white;
-  background: #019875;
+a.button,
+input[type="submit"] {
+  color: #ffffff;
+  background: #121212;
   font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
   padding: 10px 14px 12px;
   font-size: 14px;
   border-radius: 2px;
   cursor: pointer;
+  margin-left: 0.5em;
 }
 
-form a.button, input[type=submit] {
-  margin-left: 140px;
+form a.button,
+input[type="submit"] {
+  margin-left: 1em;
   transition: 0.4s;
 }
 
-input[type=submit] {
+input[type="submit"] {
   border: 0;
 }
 
-  a.button:hover, input[type=submit]:hover {
-    background-color: #01b189;
-  }
+a.button:hover,
+input[type="submit"]:hover {
+  background-color: #404040;
+}
 
 p {
   margin: 20px auto;
@@ -53,10 +58,16 @@ h2 {
   padding-top: 20px;
 }
 
+h1 {
+  color: #ffffff;
+  padding-left: 0.1em;
+}
+
 th {
-  border-bottom: 2px solid #D8B493;
+  border-bottom: 2px solid #d8b493;
   text-align: left;
   padding: 5px 20px 5px 10px;
+  color: #ffffff;
 }
 
 tr {
@@ -64,11 +75,12 @@ tr {
 }
 
 tr:nth-child(2n) {
-  background: #E7E7E7;
+  background: #121212;
 }
 
 td {
   padding: 5px 20px 5px 10px;
+  color: #b3b3b3;
 }
 
 label {
@@ -83,15 +95,30 @@ input {
   font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
   font-size: 14px;
   border-radius: 2px;
-  border-color: #E7E7E7;
+  border-color: #e7e7e7;
   transition: 0.4s;
 }
 
-input[type=text] {
+input[type="text"] {
   margin-left: 7px;
   width: 300px;
 }
 
 .error {
   color: rgb(236, 15, 15);
+}
+
+div {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 0.1em;
+  color: #b3b3b3;
+}
+
+span {
+  padding-left: 0.5em;
+}
+
+select {
+  margin-left: 0.15em;
 }

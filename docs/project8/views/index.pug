@@ -1,10 +1,15 @@
 extends layout
 
 block content
-    h1=title
+    h1 Books
+    form#search(method="POST" action="/search") 
+        input(type="text" id="search-field" placeholder="Searching Books" name="searchValue")
+        input(type="submit" value="Search" id="searchSubmit")
+
     p
         a.button(href='/books/new') Create New Book
-    table
+
+    table#book-table
         thead
             tr
                 th Title
@@ -12,10 +17,11 @@ block content
                 th Genre
                 th Year
         tbody
-            each book in books
+            each book in locals.books
                 tr
                     td
                         a(href=`/books/${book.id}`)=book.title
                     td=book.author
                     td=book.genre
                     td=book.year
+    div#page-buttons
